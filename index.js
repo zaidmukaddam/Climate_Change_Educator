@@ -2,7 +2,7 @@
 function AlertIt() {
   var answer = confirm ("Please click on OK to continue.")
   if (answer)
-  window.location="https://www.google.com"; // Add the Git link
+  window.location="https://zaidmukaddam.github.io/Climate_Change_Educator_Page2/"; // Add the Git link
 }
 function closeOpenedWindow() {
   openedWindow.close('index.html');
