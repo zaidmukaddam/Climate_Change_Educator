@@ -10,6 +10,9 @@ function closeOpenedWindow() {
 }
 
 var name = prompt("Enter Your Name");
+if(name === null){
+  name = "Beloved Stranger";
+}
 
 alert("Hey " + name + ". It's nice to meet you!");
 
