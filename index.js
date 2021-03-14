@@ -1,17 +1,22 @@
-// alert("This page has finished loading.");
 function AlertIt() {
-  var answer = confirm ("Please click on OK to continue.")
+  var answer = confirm ("Please click on OK to continue to Page two.")
   if (answer)
-  window.location="https://zaidmukaddam.github.io/Climate_Change_Educator_Page2/"; // Add the Git link
+  window.location="https://zaidmukaddam.github.io/Climate_Change_Educator_Page2/"; 
 }
+
+var openedWindow=window.open('','_self','');
 function closeOpenedWindow() {
-  openedWindow.close('index.html');
+  openedWindow.close();
 }
+
 var name = prompt("Enter Your Name");
-alert("Hey " + name + ".It's nice to meet you");
+
+alert("Hey " + name + ". It's nice to meet you!");
+
 localStorage.setItem("storageName",name);
 
-var global = prompt("Are you ready to learn?").toUpperCase();
+var global = prompt("Are you ready to learn? Yes/No").toUpperCase();
+
 if(global === "YES")
 {
   alert("Great! Let's get started!");
@@ -19,6 +24,5 @@ if(global === "YES")
 else
 {
   alert("Then come back when you are ready!");
-  window.open('', '_self', '');
-  window.close();
+  closeOpenedWindow();
 }
